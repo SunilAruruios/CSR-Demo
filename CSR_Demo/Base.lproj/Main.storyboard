@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Mfw-z4-ipr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFZ-gN-HVg">
+                                <rect key="frame" x="70" y="92" width="234" height="59"/>
+                                <color key="backgroundColor" red="0.0" green="0.37647058820000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JFZ-gN-HVg" secondAttribute="height" multiplier="234:59" id="vGO-mc-N4L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Generate KeyPair">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnGenerateKeypairClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="21E-Zc-QSA"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hV3-Cg-4GU">
+                                <rect key="frame" x="22" y="297" width="330" height="197"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hV3-Cg-4GU" secondAttribute="height" multiplier="330:197" id="6hv-gO-aVi"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4E-8M-drv">
+                                <rect key="frame" x="70" y="194" width="234" height="59"/>
+                                <color key="backgroundColor" red="0.0" green="0.37647058820000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="l4E-8M-drv" secondAttribute="height" multiplier="234:59" id="seq-FG-aZM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Generate CSR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnGenerateCSRClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ocO-sv-Bb2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JFZ-gN-HVg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="4GD-2a-XRu"/>
+                            <constraint firstAttribute="trailing" secondItem="JFZ-gN-HVg" secondAttribute="trailing" constant="71" id="ALI-I8-ujK"/>
+                            <constraint firstAttribute="trailing" secondItem="hV3-Cg-4GU" secondAttribute="trailing" constant="23" id="bCc-4V-odF"/>
+                            <constraint firstItem="l4E-8M-drv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="fcT-aj-51D"/>
+                            <constraint firstItem="hV3-Cg-4GU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="22" id="h0A-5w-5NY"/>
+                            <constraint firstAttribute="trailing" secondItem="l4E-8M-drv" secondAttribute="trailing" constant="71" id="jfQ-N6-qel"/>
+                            <constraint firstItem="hV3-Cg-4GU" firstAttribute="top" secondItem="l4E-8M-drv" secondAttribute="bottom" constant="44" id="llK-ZS-LKd"/>
+                            <constraint firstItem="l4E-8M-drv" firstAttribute="top" secondItem="JFZ-gN-HVg" secondAttribute="bottom" constant="43" id="oCb-tJ-njM"/>
+                            <constraint firstItem="JFZ-gN-HVg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="sPP-QF-Xxl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UFj-Ke-ik4"/>
+                    <connections>
+                        <outlet property="btnGenerateCSR" destination="l4E-8M-drv" id="Krt-PU-ang"/>
+                        <outlet property="btnGenerateKeyPair" destination="JFZ-gN-HVg" id="EoF-XT-duL"/>
+                        <outlet property="txtCSR" destination="hV3-Cg-4GU" id="hzB-Jc-NI5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240.80000000000001" y="117.39130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dfp-Lb-6Wv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mfw-z4-ipr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oIG-vn-5jM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.37647058820000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kz5-Nv-kuH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yPu-ab-iXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-458" y="117"/>
+        </scene>
+    </scenes>
+</document>
